@@ -1,0 +1,92 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+const title = "Mentions légales – MeLo";
+const description =
+  "Mentions légales du site MeLo : éditeur, contact, hébergeur, propriété intellectuelle, données personnelles.";
+const canonical = "https://key.melobeatsz.fr/mentions-legales";
+---
+
+<BaseLayout {title} {description} {canonical}>
+  <article class="w-full max-w-2xl bg-base-100 p-8 rounded-xl shadow-xl my-12">
+    <h1 class="text-3xl font-bold text-primary mb-6 text-center">
+      Mentions légales
+    </h1>
+
+    <section class="mb-5">
+      <h2 class="font-semibold text-secondary text-lg mb-2">Éditeur du site</h2>
+      <p>
+        Le site <strong>MeLo – Analyseur Audio</strong> (https://key.melobeatsz.fr)
+        est édité par :<br />
+        <strong>MeLo</strong> – Contact : <a
+          href="mailto:lamelobeats@gmail.com"
+          class="link link-primary">lamelobeats@gmail.com</a
+        >
+      </p>
+    </section>
+
+    <section class="mb-5">
+      <h2 class="font-semibold text-secondary text-lg mb-2">Hébergement</h2>
+      <p>
+        Hébergeur : <strong>Infomaniak</strong><br />
+        Rue Eugène Marziano 25, 1227 Les Acacias (GE)<br />
+        <a
+          href="https://www.ovhcloud.com/fr/"
+          target="_blank"
+          rel="noopener"
+          class="link link-primary">www.infomaniak.com</a
+        >
+      </p>
+    </section>
+
+    <section class="mb-5">
+      <h2 class="font-semibold text-secondary text-lg mb-2">
+        Propriété intellectuelle
+      </h2>
+      <p>
+        Le contenu du site, incluant, de façon non limitative, les textes,
+        images, graphismes, logo, icônes, sons, logiciels, est la propriété
+        exclusive de MeLo, sauf mention contraire. Toute reproduction,
+        représentation, modification, publication, adaptation de tout ou partie
+        des éléments du site, quel que soit le moyen ou le procédé utilisé, est
+        interdite, sauf autorisation écrite préalable de MeLo.
+      </p>
+    </section>
+
+    <section class="mb-5">
+      <h2 class="font-semibold text-secondary text-lg mb-2">Responsabilité</h2>
+      <p>
+        Les informations proposées sur le site le sont à titre informatif et
+        sont susceptibles d’évoluer. MeLo ne pourra être tenu responsable de
+        l’utilisation ou de l’interprétation des informations contenues sur le
+        site.
+      </p>
+    </section>
+
+    <section class="mb-5">
+      <h2 class="font-semibold text-secondary text-lg mb-2">
+        Données personnelles
+      </h2>
+      <p>
+        <strong>Aucune donnée personnelle n’est collectée à votre insu.</strong
+        ><br />
+        Les analyses audio sont réalisées localement dans votre navigateur, sans
+        transfert de fichier vers nos serveurs.<br />
+        Pour toute demande relative à vos données, contactez-nous à <a
+          href="mailto:lamelobeats@gmail.com"
+          class="link link-primary">lamelobeats@gmail.com</a
+        >.
+      </p>
+    </section>
+
+    <section class="mb-5">
+      <h2 class="font-semibold text-secondary text-lg mb-2">Cookies</h2>
+      <p>
+        Ce site n’utilise pas de cookies à des fins de suivi ou de publicité.
+      </p>
+    </section>
+
+    <div class="mt-8 flex justify-center">
+      <a href="/" class="btn btn-primary btn-wide">Retour à l’accueil</a>
+    </div>
+  </article>
+</BaseLayout>

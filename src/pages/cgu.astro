@@ -1,0 +1,99 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+const title = "CGU – MeLo";
+const description =
+  "Conditions Générales d’Utilisation (CGU) du site MeLo. Accès, utilisation, responsabilité, données personnelles, modification, loi applicable.";
+const canonical = "https://key.melobeatsz.fr/cgu";
+---
+
+<BaseLayout {title} {description} {canonical}>
+  <article class="w-full max-w-2xl bg-base-100 p-8 rounded-xl shadow-xl my-12">
+    <h1 class="text-3xl font-bold text-primary mb-6 text-center">
+      Conditions Générales d’Utilisation
+    </h1>
+
+    <section class="mb-5">
+      <h2 class="font-semibold text-secondary text-lg mb-2">Objet</h2>
+      <p>
+        Les présentes conditions générales d’utilisation (CGU) régissent l’accès
+        et l’utilisation du site <strong>MeLo – Analyseur Audio</strong> (https://key.melobeatsz.fr)
+        par tout utilisateur.
+      </p>
+    </section>
+
+    <section class="mb-5">
+      <h2 class="font-semibold text-secondary text-lg mb-2">
+        Accès au service
+      </h2>
+      <p>
+        Le service d’analyse audio est accessible gratuitement à tout
+        utilisateur disposant d’un accès à Internet. Tous les frais liés à
+        l’accès au service restent à la charge de l’utilisateur.
+      </p>
+    </section>
+
+    <section class="mb-5">
+      <h2 class="font-semibold text-secondary text-lg mb-2">
+        Utilisation du site
+      </h2>
+      <p>
+        L’utilisateur s’engage à utiliser le service uniquement à des fins
+        personnelles et non commerciales. Toute tentative de détournement,
+        d’attaque ou de nuisance au service est strictement interdite.
+      </p>
+    </section>
+
+    <section class="mb-5">
+      <h2 class="font-semibold text-secondary text-lg mb-2">
+        Propriété intellectuelle
+      </h2>
+      <p>
+        Le contenu et la technologie utilisés sur ce site sont protégés par les
+        lois en vigueur sur la propriété intellectuelle. L’utilisateur s’engage
+        à ne pas reproduire, copier, vendre ou exploiter tout ou partie du site
+        sans autorisation expresse.
+      </p>
+    </section>
+
+    <section class="mb-5">
+      <h2 class="font-semibold text-secondary text-lg mb-2">Responsabilité</h2>
+      <p>
+        L’éditeur du site ne peut être tenu responsable en cas d’interruption ou
+        d’indisponibilité du service, ni des conséquences de l’utilisation des
+        résultats d’analyse. L’utilisation du service se fait sous la seule
+        responsabilité de l’utilisateur.
+      </p>
+    </section>
+
+    <section class="mb-5">
+      <h2 class="font-semibold text-secondary text-lg mb-2">
+        Données personnelles
+      </h2>
+      <p>
+        Le site ne stocke ni ne traite aucune donnée personnelle sensible. Les
+        fichiers audio soumis pour analyse ne sont jamais transmis à un serveur
+        externe et restent sur l’appareil de l’utilisateur.
+      </p>
+    </section>
+
+    <section class="mb-5">
+      <h2 class="font-semibold text-secondary text-lg mb-2">
+        Modification des CGU
+      </h2>
+      <p>
+        Les présentes CGU peuvent être modifiées à tout moment par MeLo.
+        L’utilisateur est invité à consulter régulièrement la dernière version
+        disponible sur le site.
+      </p>
+    </section>
+
+    <section class="mb-5">
+      <h2 class="font-semibold text-secondary text-lg mb-2">Loi applicable</h2>
+      <p>Les présentes CGU sont soumises au droit français.</p>
+    </section>
+
+    <div class="mt-8 flex justify-center">
+      <a href="/" class="btn btn-primary btn-wide">Retour à l’accueil</a>
+    </div>
+  </article>
+</BaseLayout>

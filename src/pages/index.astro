@@ -1,16 +1,12 @@
 ---
-
+import BaseLayout from "../layouts/BaseLayout.astro";
+import AnalyseurAudio from "../components/AnalyserAudio";
+const title = "Analyseur Audio – MeLo";
+const description =
+  "Détectez la clé et le BPM de vos morceaux avec MeLo, sans upload, rapide et gratuit.";
+const canonical = "https://key.melobeatsz.fr/";
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<BaseLayout {title} {description} {canonical}>
+  <AnalyseurAudio client:load />
+</BaseLayout>
