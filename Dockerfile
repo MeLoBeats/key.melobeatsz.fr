@@ -1,8 +1,9 @@
 # Étape 1 : Build Astro
 FROM node:lts AS build
 WORKDIR /app
-COPY . .
-RUN npm i
+COPY package.json package-lock.json ./        
+RUN npm ci                                    
+COPY . .                                      
 RUN npm run build
 
 # Étape 2 : Servez les fichiers statiques avec Apache
