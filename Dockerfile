@@ -2,7 +2,7 @@
 FROM node:lts AS build
 WORKDIR /app
 COPY . .
-RUN npm ci
+RUN npm i
 RUN npm run build
 
 # Étape 2 : Servez les fichiers statiques avec Apache
