@@ -7,11 +7,11 @@ const {
   canonical = url,
 } = Astro.props;
 
-import ThemeChanger from "../components/ThemeChanger"
-import "../styles/global.css"
+import ThemeChanger from "../components/ThemeChanger";
+import "../styles/global.css";
 ---
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
   <head>
     <meta charset="UTF-8" />
@@ -22,8 +22,8 @@ import "../styles/global.css"
     <link rel="canonical" href={canonical} />
 
     <!-- DaisyUI + favicon -->
-    <link rel="icon" href="/favicon.ico" sizes="any" />
-    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="icon" href="/favicon_key_melobeatsz.png" sizes="any" />
+    <link rel="apple-touch-icon" href="/favicon_key_melobeatsz.png" />
 
     <!-- Open Graph / Twitter Cards -->
     <meta property="og:title" content={title} />
@@ -38,42 +38,60 @@ import "../styles/global.css"
     <meta name="twitter:description" content={description} />
     <meta name="twitter:image" content={image} />
 
-    <meta name="google-site-verification" content="5u0uTtW4cxkmIsq-q8aQuzJPH_mranj0D6Z-VxGWZhI" />
-    
+    <meta
+      name="google-site-verification"
+      content="5u0uTtW4cxkmIsq-q8aQuzJPH_mranj0D6Z-VxGWZhI"
+    />
 
     <!-- Schema.org WebSite (SEO maximal) -->
-    <script type="application/ld+json">
-      {JSON.stringify({
+    <script is:inline type="application/ld+json">
+      {
         "@context": "https://schema.org",
         "@type": "WebSite",
-        "url": url,
-        "name": title,
-        "description": description,
-        "image": image,
+        "url": "https://key.melobeatsz.fr/",
+        "name": "Analyseur Audio – MeLo",
+        "description": "Détectez la clé et le BPM de vos morceaux avec MeLo, sans upload, rapide et gratuit.",
+        "image": "https://key.melobeatsz.fr/preview.png",
         "publisher": {
           "@type": "Organization",
           "name": "MeLo"
         }
-      })}
+      }
     </script>
-    <script defer data-domain="key.melobeatsz.fr" src="https://plausible.melobeatsz.fr/js/script.js"></script>
+
+    <script
+      is:inline
+      defer
+      data-domain="key.melobeatsz.fr"
+      src="https://plausible.melobeatsz.fr/js/script.js"></script>
   </head>
   <body class="bg-base-200 min-h-screen flex flex-col">
     <ThemeChanger client:load />
-    <main id="main" class="flex-1 flex flex-col items-center justify-center px-4">
+    <main
+      id="main"
+      class="flex-1 flex flex-col items-center justify-center px-4"
+    >
       <slot />
     </main>
     <footer class="w-full text-center py-4 bg-base-200 opacity-90">
       <div class="flex flex-col items-center gap-1 text-base-content">
         <div class="flex gap-4 mb-1">
-          <a href="/mentions-legales" class="link link-hover link-primary">Mentions légales</a>
+          <a href="/mentions-legales" class="link link-hover link-primary"
+            >Mentions légales</a
+          >
           <span>·</span>
           <a href="/cgu" class="link link-hover link-primary">CGU</a>
           <span>·</span>
-          <a href="https://convert.melobeatsz.fr" class="link link-hover link-primary">Convertisseur Youtube vers MP3 / MP4</a>
+          <a
+            href="https://convert.melobeatsz.fr"
+            class="link link-hover link-primary"
+            >Convertisseur Youtube vers MP3 / MP4</a
+          >
         </div>
         <div class="opacity-70 text-sm">
-          Réalisé avec <span class="text-error">❤️</span> par <span class="font-bold text-secondary">MeLo</span>
+          Réalisé avec <span class="text-error">❤️</span> par <span
+            class="font-bold text-secondary">MeLo</span
+          >
         </div>
       </div>
     </footer>
