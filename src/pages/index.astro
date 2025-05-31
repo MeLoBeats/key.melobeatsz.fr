@@ -7,6 +7,50 @@ const description =
 const canonical = "https://key.melobeatsz.fr/";
 ---
 
+<style>
+  <style > .seo-text {
+    max-width: 800px; /* Limite la largeur pour une lecture confortable */
+    margin: 2rem auto; /* Centre horizontalement et ajoute un espace au-dessus/en-dessous */
+    padding: 1.5rem; /* Espace intérieur pour ne pas coller le texte aux bords */
+    background-color: #f9fafb; /* Fond clair légèrement gris pour bien délimiter la zone */
+    border-radius: 8px; /* Coins arrondis */
+    color: #333; /* Texte gris foncé pour un bon contraste */
+    font-size: 1rem; /* Taille de texte standard pour le corps */
+    line-height: 1.6; /* Interlignage confortable */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05); /* Ombre discrète pour faire ressortir la section */
+  }
+
+  .seo-text h2 {
+    font-size: 1.5rem; /* Taille légèrement plus grande pour le titre */
+    margin-bottom: 0.75rem; /* Espace sous le titre */
+    color: #1f2937; /* Couleur un peu plus sombre pour le sous-titre */
+  }
+
+  .seo-text p {
+    margin-bottom: 0.75rem; /* Espace entre les paragraphes */
+  }
+
+  @media (max-width: 600px) {
+    /* Réactivité sur petits écrans */
+    .seo-text {
+      padding: 1rem;
+      font-size: 0.95rem;
+    }
+    .seo-text h2 {
+      font-size: 1.25rem;
+    }
+  }
+</style>
+
 <BaseLayout {title} {description} {canonical}>
+  <div class="seo-text">
+    <h1>Analyseur Audio – MeLo</h1>
+    <p>
+      Notre outil gratuit vous permet de détecter la clé musicale (tonalité) et
+      le BPM de vos fichiers audio rapidement et sans upload. Glissez-déposez
+      simplement votre morceau, et MeLo vous renverra la mesure précise.
+    </p>
+  </div>
+
   <AnalyseurAudio client:load />
 </BaseLayout>
