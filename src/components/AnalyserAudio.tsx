@@ -3,8 +3,8 @@ import EssentiaModule from "essentia.js";
 import { Plausible } from "plausible-client";
 // Liste des thèmes DaisyUI (tu peux les modifier à ta guise)
 const plausible = new Plausible({
-    apiHost: "plausible.melobeatsz.fr",
-    domain: "key.melobeatsz.fr",
+    domain: "plausible.melobeatsz.fr",
+    apiHost: "key.melobeatsz.fr",
 })
 const themes = ["light", "dark", "cupcake", "synthwave", "retro"];
 
