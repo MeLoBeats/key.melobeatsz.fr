@@ -1,6 +1,7 @@
 import { createSignal, onMount } from "solid-js";
 import EssentiaModule from "essentia.js";
-
+import Plausible from "plausible-tracker";
+const { trackEvent } = Plausible()
 // Liste des thèmes DaisyUI (tu peux les modifier à ta guise)
 const themes = ["light", "dark", "cupcake", "synthwave", "retro"];
 
@@ -51,6 +52,7 @@ export default function AnalyseurAudio() {
         setLoading(true);
 
         try {
+            trackEvent('File Upload') // Uncomment and import plausible if you use it
             const audioBuffer = await extractAudioBuffer(file);
             const left = audioBuffer.getChannelData(0);
 
